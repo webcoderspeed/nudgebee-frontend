@@ -10,7 +10,12 @@ import { Avatar } from 'antd';
 
 const Navbar = () => {
 	return (
-		<header className='flex items-center justify-between px-20 py-4 bg-[#213A8E]'>
+		<header
+			className='flex items-center justify-between px-20 py-4 border-b-[1px] border-[#41569D]'
+			style={{
+				background: `linear-gradient(94.05deg, #213A8E 2.37%, #0C2785 23.11%, #021A6F 107.95%)`,
+			}}
+		>
 			<nav className='flex items-center gap-2'>
 				<div className='border-[#B9B9B9] border-[1px] rounded-md px-4 py-2 h-10 w-24 mr-6' />
 				{navigation?.map((item) => (
